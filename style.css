@@ -1,0 +1,1320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: rgb(213, 54, 54);
+    --text-color: #fff;
+    --bg-color: rgb(24, 22, 22);
+    --box-color: rgb(40, 39, 42);
+    --container-color: rgb(28, 26, 26);
+    --text-shadow: rgb(205, 201, 194);
+}
+
+body {
+    max-width: 1960px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* height: 5000px; */
+}
+
+.head {
+    max-width: 1960px;
+    margin: 0 auto;
+    background-color: rgb(153, 51, 51);
+    /* background-color: black; */
+    /* position: sticky;
+    top: 0; */
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+}
+
+.navbar {
+    max-width: 1960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: 1s;
+    letter-spacing: 1.5px;
+}
+
+.navbar li a .icon {
+    display: none;
+}
+
+.logo {
+    color: var(--main-color);
+    margin: 0 auto;
+    padding-right: 10px;
+
+}
+
+.logo i {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+
+.navbar a:hover {
+    text-decoration: underline;
+
+    text-decoration-color: var(--main-color);
+}
+
+
+.intros {
+    max-width: 1960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 600px auto;
+    /* grid-template-columns: auto auto; */
+    padding: 20px 0;
+
+}
+
+.intropic {
+    padding-left: 220px;
+    /* justify-self: end; */
+    /* object-fit: cover; */
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.introtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 1000px; */
+    max-width: 80%
+}
+
+.introtext h1 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 3px;
+}
+
+.introtext h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-color);
+
+}
+
+.introtext p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.5;
+    padding: 5px;
+    line-height: 1.5;
+
+}
+
+
+
+.btn1 {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    padding: 20px 40px;
+    display: flex;
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    filter: brightness(0.9);
+    transition: .8s;
+}
+
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+    transition: 1s;
+}
+
+.container {
+    max-width: 1960px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: var(--container-color);
+
+}
+
+.cards {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    justify-content: center;
+    min-height: 300px;
+    /* background-color: blueviolet; */
+}
+
+.cards .bx {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.cards h2 {
+    padding: 0 0 5px 0;
+    /* font-size: 2.5rem; */
+    font-size: clamp(2rem, 30%, 2.5rem);
+    font-weight: 800;
+}
+
+
+.cards p {
+    max-width: 300px;
+    letter-spacing: 1px;
+    opacity: .9;
+}
+
+.cards a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transition: 1s;
+    filter: brightness(.5);
+    padding: 10px 0 0 0;
+}
+
+.card1 a,
+.card3 a {
+    color: var(--main-color);
+}
+
+.cards a .bx {
+    font-size: 1.1rem;
+}
+
+.cards a:hover {
+    transform: scale(2);
+    filter: brightness(2);
+}
+
+.card1 {
+    padding: 10px;
+    background-color: var(--box-color);
+}
+
+.card1 .bx,
+.card3 .bx {
+    color: var(--main-color);
+}
+
+.card2 {
+    padding: 10px;
+    background-color: var(--main-color);
+}
+
+.card2 a {
+    color: var(--text-color);
+}
+
+
+.card3 {
+    padding: 10px;
+    background-color: var(--box-color);
+}
+
+
+
+.exp-container {
+    max-width: 1960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+.exp {
+    column-span: 4;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.exp h2 {
+    color: var(--main-color);
+    font-size: 130px;
+    font-weight: bolder;
+
+}
+
+.exp p {
+    font-size: 40px;
+    opacity: .8;
+}
+
+
+
+.exp-card {
+    column-span: 8;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-color: var(--box-color);
+    text-align: center;
+    padding: 30px;
+}
+
+.exp-card h2 {
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+.exp-card p {
+    font-size: 20px;
+    opacity: .8;
+}
+
+
+.sec-navbar {
+    max-width: 1960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 85% auto;
+    padding: 150px 0px;
+
+}
+
+.sec-bartext {}
+
+.sec-bartext h2 {
+    /* background-color: rebeccapurple; */
+    column-span: 7;
+    color: var(--text-color);
+    font-weight: 800;
+    font-size: 50px;
+    opacity: .9;
+    letter-spacing: 5px;
+}
+
+.sec-bartext p {
+    color: var(--text-color);
+    opacity: .7;
+    font-size: 30px;
+}
+
+.navbtn {}
+
+
+.btn2 {
+    column-span: 3;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    filter: brightness(0.9);
+    transition: .8s;
+}
+
+
+
+.project-con {
+    max-width: 1960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding-bottom: 150px;
+
+}
+
+
+.projImg {
+    background-color: var(--box-color);
+    padding: 100px 40px;
+
+}
+
+.projImg img {
+    object-fit: fill;
+    width: 100%;
+}
+
+.proj-card h2 {
+    margin: 10px;
+    font-size: 40px;
+    color: var(--text-color);
+    text-shadow: 2px 3px var(--text-shadow);
+}
+
+.proj-card a {
+    color: var(--main-color);
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    padding: 10px;
+    /* margin: 0px 0px 100px 0px; */
+    /* text-shadow: 2px 2px rgb(115, 16, 16); */
+}
+
+.proj-card .bx {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.proj-card a:hover {
+    filter: brightness(2);
+    transform: scale(1.2);
+}
+
+.contact {
+    max-width: 1960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    background-color: var(--box-color);
+    /* padding: 100px ; */
+    padding: 50px;
+}
+
+.contact_text {
+    padding: 50px 30px;
+
+}
+
+.contact_text h2 {
+    font-size: 50px;
+    opacity: .9;
+    max-width: 700px;
+    font-weight: 800;
+    text-shadow: 2px 4px var(--text-shadow);
+    padding-bottom: 20px;
+}
+
+.contact_text p {
+    font-size: 20px;
+    opacity: .7;
+}
+
+
+.contactbtn {
+    display: flex;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+}
+
+.btn3 {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    padding: 30px 70px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    filter: brightness(0.9);
+    transition: .8s;
+}
+
+.footernav {
+    max-width: 1960px;
+    margin: 0 auto;
+}
+
+.footernav-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    column-gap: 40px;
+    font-size: 30px;
+    transition: 1s;
+}
+
+.footernav-text a:hover {
+    text-decoration: underline;
+    /* transition: .8s; */
+    text-decoration-color: var(--main-color);
+}
+
+.footernav-text a {
+
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.social {
+    max-width: 1960px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--container-color);
+    padding: 10px 0;
+}
+
+.socialmedia {
+    margin: auto;
+    gap: 30px;
+}
+
+.socialmedia i {
+    font-size: 50px;
+    opacity: .5;
+    margin-left: 40px;
+}
+
+.social p {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.social span {
+    color: var(--main-color);
+    padding-right: 5px;
+}
+
+@media (max-width:1435px) {
+    .sec-bartext h2 {
+        font-weight: 700;
+        font-size: 45px;
+        /* letter-spacing: 4px; */
+    }
+
+    .sec-bartext p {
+        font-size: 25px;
+    }
+
+    .btn2 {
+        padding: 25px 45px;
+    }
+}
+
+@media (max-width:1365px) {
+    .sec-bartext p {
+        font-size: 20px;
+    }
+
+    .btn2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1298px) {
+    .sec-navbar {
+        grid-template-columns: 80% auto;
+        padding: 100px 0px;
+    }
+
+    .sec-bartext h2 {
+        font-weight: 700;
+        font-size: 40px;
+
+    }
+
+    .sec-bartext p {
+        font-size: 20px;
+    }
+
+    .btn2 {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width:1232px) {
+    .logo {
+        font-size: 45px;
+    }
+
+    .intros {
+        grid-template-columns: 500px auto;
+        padding: 15px 0;
+    }
+
+    .intropic {
+        padding-left: 100px;
+
+    }
+
+    .navbar a {
+        font-size: 1.4rem;
+    }
+
+    .cards .bx {
+        font-size: 3.5rem;
+        font-weight: 450;
+
+    }
+
+    .proj-card h2 {
+        font-size: 35px;
+    }
+
+    .proj-card a {
+        font-size: 18px;
+    }
+
+    .btn2 {
+        font-size: 18px;
+    }
+
+    .exp h2 {
+        font-size: 100px;
+    }
+
+    .exp p {
+        font-size: 35px;
+    }
+
+    .projImg {
+
+        padding: 80px 30px;
+
+    }
+
+}
+
+@media (max-width:965px) {
+    .intros {
+        grid-template-columns: 450px auto;
+        padding: 20px 0;
+
+    }
+
+    .intropic {
+        padding-left: 50px;
+
+    }
+
+    .introtext {
+
+        max-width: 100%
+    }
+
+    .exp-container {
+
+        grid-template-columns: 30% auto;
+    }
+
+    .exp h2 {
+
+        font-size: 80px;
+        font-weight: bold;
+
+    }
+
+    .exp p {
+        font-size: 25px;
+        opacity: .8;
+    }
+
+}
+
+@media (max-width:930px) {
+
+
+    .sec-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .proj-card h2 {
+        font-size: 30px;
+        text-shadow: 1px 2px var(--text-shadow);
+    }
+
+    .proj-card a {
+        font-size: 15px;
+
+    }
+
+    .projImg {
+
+        padding: 70px 30px;
+
+    }
+
+    .project-con {
+        padding-bottom: 100px;
+
+    }
+
+    .proj-card a {
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    .contact_text {
+        padding: 40px 30px;
+
+    }
+
+    .contact_text h2 {
+        font-size: 40px;
+        font-weight: 600;
+        text-shadow: 1px 4px var(--text-shadow);
+    }
+
+    .contact_text p {
+        font-size: 15px;
+        opacity: .7;
+    }
+
+    .btn3 {
+        padding: 30px 60px;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    .footernav-text {
+        font-size: 20px;
+        margin-top: 150px;
+        column-gap: 30px;
+    }
+
+    .socialmedia i {
+        font-size: 40px;
+
+    }
+}
+
+@media (max-width:850px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        /* min-height: 400px; */
+
+    }
+
+    .socialmedia i {
+        font-size: 40px;
+        margin-left: 30px;
+
+    }
+
+
+
+    .proj-card h2 {
+        font-size: 25px;
+
+    }
+
+    .projImg {}
+
+    .project-con {
+        padding-bottom: 90px;
+
+    }
+
+    .btn3 {
+        padding: 20px 50px;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    .footernav-text {
+        font-size: 20px;
+        margin-top: 130px;
+
+    }
+
+    .social {
+
+        margin-top: 50px;
+
+    }
+
+    .sec-navbar {
+        padding: 130px 0px;
+
+    }
+
+    .social p {
+        font-size: 15px;
+    }
+
+    .intropic {
+        padding-left: 40px;
+        /* justify-self: end; */
+        /* object-fit: cover; */
+        max-height: 50%;
+        max-width: 50%;
+    }
+
+    .intros {
+        grid-template-columns: 400px auto;
+        padding: 15px 0;
+
+    }
+
+    .introtext h1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 2.5px;
+    }
+
+    .introtext h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--text-color);
+
+    }
+
+    .btn1 {
+        padding: 20px 40px;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .exp {
+        column-span: 3;
+
+    }
+
+    .exp-card {
+        column-span: 8;
+        padding: 15px;
+    }
+
+    .exp-card h2 {
+        font-size: 40px;
+    }
+
+    .exp-card p {
+        font-size: 18px;
+
+    }
+}
+
+@media (max-width:735px) {
+    .sec-bartext h2 {
+        font-weight: 700;
+        font-size: 30px;
+
+    }
+
+    .sec-bartext p {
+        font-size: 15px;
+    }
+
+    .contact_text {
+        padding: 30px 30px;
+
+    }
+
+    .contact_text h2 {
+        font-size: 30px;
+
+    }
+
+    .contact_text p {
+        font-size: 13px;
+
+    }
+
+    .socialmedia i {
+        font-size: 30px;
+        margin-left: 25px;
+
+    }
+
+    .social {
+
+        margin-top: 40px;
+
+    }
+
+    .sec-navbar {
+        padding: 100px 0px;
+
+    }
+}
+
+/* 706px */
+@media (max-width:715px) {
+
+    .intros {
+        max-width: 1960px;
+        margin: 0 auto;
+        /* padding: 20px 0; */
+        display: block;
+    }
+
+    .intropic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* max-width: 700px;
+        max-height: 700px; */
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .introtext {
+        padding: 80px;
+        /* max-width: 80%; */
+    }
+
+    .exp-container {
+        max-width: 1960px;
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    .exp {
+        margin: 20px;
+    }
+
+    .exp-card {
+        padding: 40px;
+
+    }
+
+
+}
+
+@media (max-width:620px) {
+    .head {
+        display: block;
+        /* background-color: navajowhite; */
+    }
+
+    .logo i {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .navbar {
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /* align-items: center; */
+        column-gap: 20px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    .sec-navbar {
+        max-width: 1960px;
+        margin: 0 auto;
+        display: block;
+        padding: 70px 50px;
+    }
+
+
+    .btn2 {
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .projImg {
+        padding: 30px 20px;
+
+    }
+
+    .contact {
+        max-width: 1960px;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: justify;
+    }
+
+    .btn3 {
+        padding: 20px 40px;
+    }
+
+    .contactbtn {
+        padding: 0px 30px;
+    }
+
+    .project-con {
+        padding-bottom: 50px;
+    }
+
+    .footernav-text {
+
+        margin-top: 100px;
+        column-gap: 20px;
+        font-size: 20px;
+
+    }
+
+    .socialmedia {
+        gap: 20px;
+    }
+
+    .socialmedia i {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .exp-card {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* .exp-card h2 {
+        font-size: 20px;
+    } */
+
+    .exp-card p {
+        font-size: 15px;
+
+    }
+
+    .proj-card a {
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+
+    .contact {
+
+        padding: 30px;
+    }
+
+    .introtext {
+        padding: 70px;
+
+    }
+
+    .sec-navbar {
+
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width:500px) {
+    .sec-bartext h2 {
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    .social {
+        margin-top: 35px;
+    }
+
+    .sec-bartext p {
+        font-size: 15px;
+    }
+
+    .sec-navbar {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width:470px) {
+    .exp-card {
+        gap: 13px;
+
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .introtext h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--text-color);
+    }
+
+    .introtext h1 {
+        font-size: 1rem;
+
+    }
+
+    .introtext p {
+        font-size: .8rem;
+
+        padding: 3px;
+        line-height: 1.5;
+    }
+
+    .intropic {
+
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    .navbar {
+
+        column-gap: 15px;
+    }
+
+    .introtext {
+        padding: 50px;
+    }
+
+    .projImg {
+        padding: 20px 10px;
+    }
+
+    .socialmedia {
+        gap: 10px;
+    }
+
+    .social p {
+        font-size: 12px;
+    }
+
+    .social span {
+        padding-right: 3px;
+    }
+
+    .socialmedia i {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .proj-card h2 {
+        font-size: 20px;
+    }
+
+    .proj-card a {
+        letter-spacing: 2px;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .proj-card .bx {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .footernav-text {
+        margin-top: 80px;
+        column-gap: 16px;
+        font-size: 18px;
+    }
+
+    .contact {
+        padding: 25px;
+    }
+
+    .btn1 {
+
+        padding: 15px 35px;
+    }
+
+    .btn3 {
+        padding: 15px 35px;
+    }
+
+    .btn2 {
+        padding: 15px 35px;
+    }
+
+    .exp h2 {
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    .exp p {
+        font-size: 20px;
+        opacity: .8;
+    }
+
+    .sec-bartext h2 {
+        font-weight: 700;
+        font-size: 23px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .sec-navbar {
+        padding: 40px 25px;
+    }
+
+    .container {
+        padding: 80px 0;
+    }
+
+
+    .btn1 {
+        font-size: 15px;
+        padding: 13px 30px;
+    }
+
+    .btn2 {
+        font-size: 15px;
+        padding: 13px 30px;
+    }
+
+    .btn3 {
+        font-size: 15px;
+        padding: 13px 30px;
+    }
+}
+
+@media (max-width:378px) {
+    .intropic {
+        padding: 20px;
+        max-width: 90%;
+        max-height: 90%;
+
+    }
+
+    .head {
+        padding: 13px;
+    }
+
+    .project-con {
+        gap: 10px;
+
+    }
+
+    .navbar {
+        column-gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        padding: 0px 10px;
+        font-size: 40px;
+    }
+
+    .projImg {
+        padding: 15px 8px;
+    }
+
+    .exp-card {
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .footernav-text {
+        margin-top: 60px;
+        column-gap: 15px;
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 335px) {
+    .introtext {
+        padding: 40px;
+    }
+
+    .btn1 {
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+
+    .btn2 {
+        font-size: 1px;
+        padding: 10px 25px;
+    }
+
+    .btn3 {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+
+    .intropic {
+
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .contact_text {
+        padding: 20px 20px;
+    }
+
+    .container {
+        padding: 50px 0;
+    }
+
+    .introtext h2 {
+        font-size: 1.5rem;
+    }
+
+    .socialmedia {
+        gap: 5px;
+    }
+
+    .sec-navbar {
+        padding: 30px 20px;
+    }
+
+    .socialmedia i {
+        font-size: 23px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .navbar {
+        column-gap: 5px;
+    }
+
+    .proj-card h2 {
+        font-size: 15px;
+    }
+
+    .proj-card a {
+        letter-spacing: 1.5px;
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .navbar a {
+        letter-spacing: 1px;
+    }
+
+    .exp-card {
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .intropic {
+        padding: 5px;
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
